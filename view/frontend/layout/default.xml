@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Yudiz
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Yudiz
+ * @package     Yudiz_FirstOrder
+ * @copyright   Copyright (c) 2024 Yudiz (https://www.Yudiz.com/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+    <referenceBlock name="content">
+        <block class="Yudiz\FirstOrder\Block\GeneratedcodeData" name="example" after="-" template="Yudiz_FirstOrder::generatecode.phtml"/>
+    </referenceBlock>
+</body> 
+</page>
