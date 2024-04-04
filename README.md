@@ -77,7 +77,7 @@ Login to the **Magento Admin**, navigate to `Yudiz -> First Order Configuration 
 
 #### General Configuration 
 
-- Exension enable : Select Yes/No to enable or disable the module
+- Extension enable : Select Yes/No to enable or disable the module
 - Shopping Cart price Rule:Choose the shopping Cart price Rule
 - Length: Specify the length of the generated coupon code. It determines how many characters the coupon code will have.
   Example: "Length: Enter the desired length for the coupon code (e.g., 10)"
@@ -87,6 +87,15 @@ Login to the **Magento Admin**, navigate to `Yudiz -> First Order Configuration 
   Example: "Prefix: Enter the prefix to be added before the coupon code (e.g., FIRSTORDER)"
 - Suffix: Define a suffix to be included at the end of each generated coupon code.
   Example: "Suffix: Enter the suffix to be added after the coupon code (e.g., OFF)"
+
+#### Email Configuration 
+
+<div>
+    <img src="./ReadmeImages/EmailConfiguration.png" alt="EmailConfiguration">
+</div><br/>
+
+- Sender Name : Set the sender's name
+- Sender Email : Set Sender’s email address  for Send Email
 
 
 After completing these steps, click on "Save," which will save the configuration.
