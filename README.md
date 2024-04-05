@@ -1,6 +1,18 @@
 # First Order Discount for Magento 2
 
-"First Order Discount Magento 2" is an extension that provides discounts for new customers on their first purchase at your Magento 2 store. This extension enables you to generate personalized discount codes that are automatically applied to the first order made by a customer.
+The First Order Discount Magento 2 extension is like a helpful assistant for your online store. It gives new customers a special discount when they make their first purchase. This makes it more likely for people visiting your store to become paying customers. The extension creates unique discount codes for each new customer, which are automatically applied when they checkout. This makes shopping easier for them and increases the chances of them completing their purchase.
+
+
+For the store owner, the extension is easy to use. You can adjust the discount settings as per your needs. The extension sends the discount codes to the customers when they register and also via email. With this extension, you can attract more customers and keep them coming back for more.
+
+## Features
+
+- Easy to use
+- User-friendly interface
+- Users can easily obtain a coupon code for their first order discount
+- And receive an email with the same coupon code.
+- Admins can easily configure the module
+
 ## Installation
 
 You can install the Yudiz First Order Extension using one of two methods:
