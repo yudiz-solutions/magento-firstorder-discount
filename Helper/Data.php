@@ -23,9 +23,24 @@ use Magento\Store\Model\StoreManagerInterface;
 
 class Data extends AbstractHelper
 {
+    /**
+     * @var TransportBuilder
+     */
     protected $transportBuilder;
+
+    /**
+     * @var StateInterface
+     */
     protected $inlineTranslation;
+
+    /**
+     * @var StoreManagerInterface
+     */
     protected $storeManager;
+
+    /**
+     * @var LoggerInterface
+     */
     protected $logger;
 
     /**
@@ -72,12 +87,12 @@ class Data extends AbstractHelper
             // Prepare email variables
             $customerName = $customer->getFirstName() . " " . $customer->getLastName();
             $sendEmailTo = $customer->getEmail();
-            $sender = array('name' => $senderName, 'email' => $senderEmail);
-            $emailTemplateVariables = array(
+            $sender = ['name' => $senderName, 'email' => $senderEmail];
+            $emailTemplateVariables = [
                 'name' => $customerName,
                 'couponCode' => $couponCode,
-            );
-
+            ];
+            
             // Suspend inline translation to prevent conflicts with email template
             $this->inlineTranslation->suspend();
 

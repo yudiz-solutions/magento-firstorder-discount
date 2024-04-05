@@ -15,8 +15,8 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="yudiz_extensions" translate="label" sortOrder="50">
-            <label>Yudiz FirstOrder</label>
+         <tab id="yudiz_extensions" translate="label" sortOrder="10">
+            <label>Yudiz Extensions</label>
         </tab>
 
         <!-- First Order Module Configuration -->

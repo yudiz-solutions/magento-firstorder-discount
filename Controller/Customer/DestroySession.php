@@ -21,8 +21,14 @@ use Magento\Framework\Controller\Result\JsonFactory;
 
 class DestroySession extends Action
 {
-    // Declare class properties
+    /**
+     * @var SessionManagerInterface
+     */
     protected $session;
+
+    /**
+     * @var JsonFactory
+     */
     protected $resultJsonFactory;
 
     /**

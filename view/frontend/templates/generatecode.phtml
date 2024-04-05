@@ -17,7 +17,11 @@ $data = $block->getGeneratedCoupon();
 <?php if (!empty($data)) {?>
 <div id="popup-modal">
     <h3>Welcome Offer!</h3>
-    <p>Congratulations on your first order! Use the coupon code <strong><?php echo $data; ?></strong> during checkout to redeem your special offer.</p>
+    <p>
+        Congratulations on your first order! Use the coupon code 
+        <strong><?= $escaper->escapeHtml($data) ?></strong>
+        during checkout to redeem your special offer.
+    </p>
 </div>
 <script>
     require(

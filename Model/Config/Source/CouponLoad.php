@@ -17,9 +17,10 @@ namespace Yudiz\FirstOrder\Model\Config\Source;
 use Magento\SalesRule\Model\RuleFactory;
 
 class CouponLoad implements \Magento\Framework\Option\ArrayInterface
-
 {
-    // Declare class properties
+    /**
+     * @var RuleFactory
+     */
     protected $_salesRuleCoupon;
 
     /**

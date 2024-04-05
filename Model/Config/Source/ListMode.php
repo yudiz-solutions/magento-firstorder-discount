@@ -17,7 +17,7 @@ namespace Yudiz\FirstOrder\Model\Config\Source;
 /**
  * Class ListMode
  *
- * @package Yudiz\FirstOrder\Model\Config\Source
+ * This class provides options for list mode selection.
  */
 class ListMode implements \Magento\Framework\Data\OptionSourceInterface
 {

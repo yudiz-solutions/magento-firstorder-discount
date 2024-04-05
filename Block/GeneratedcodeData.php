@@ -9,7 +9,7 @@
  *
  * @category    Yudiz
  * @package     Yudiz_FirstOrder
- * @copyright   Copyright (c) 2024 Yudiz (https://www.Yudiz.com/)
+ * @copyright   Copyright (c) 2024 Yudiz (https://www.yudiz.com/)
  */
 
 namespace Yudiz\FirstOrder\Block;
@@ -20,8 +20,14 @@ use Magento\Framework\Registry;
 
 class GeneratedcodeData extends Template
 {
-    // Declare class properties
+    /**
+     * @var Registry
+     */
     protected $registry;
+
+    /**
+     * @var SessionManagerInterface
+     */
     protected $session;
 
     /**

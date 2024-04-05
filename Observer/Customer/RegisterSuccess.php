@@ -29,14 +29,50 @@ use Yudiz\FirstOrder\Helper\Data as FirstOrderHelper;
 class RegisterSuccess implements ObserverInterface
 {
     // Declare class properties
-    protected $scopeConfig;
+
+    /**
+     * @var CouponGenerator
+     */
     protected $couponGenerator;
+
+    /**
+     * @var CouponFactory
+     */
     protected $couponFactory;
+
+    /**
+     * @var ScopeConfigInterface
+     */
+    protected $scopeConfig;
+
+    /**
+     * @var RuleFactory
+     */
     protected $ruleFactory;
+
+    /**
+     * @var UrlInterface
+     */
     protected $urlBuilder;
+
+    /**
+     * @var SessionManagerInterface
+     */
     protected $session;
+
+    /**
+     * @var Registry
+     */
     protected $registry;
+
+    /**
+     * @var LoggerInterface
+     */
     protected $logger;
+
+    /**
+     * @var FirstOrderHelper
+     */
     protected $firstOrderHelper;
 
     /**
@@ -154,6 +190,7 @@ class RegisterSuccess implements ObserverInterface
         } catch (\Exception $e) {
             $this->logger->error($e->getMessage());
             return [];
+       
         }
     }
 }
