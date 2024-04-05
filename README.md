@@ -35,13 +35,13 @@ With these steps completed, you'll be ready to utilize the Yudiz First Order Ext
 
 Before Downloading the Yudiz First Order Extension, it is necessary to have the Yudiz Core module. You can download the module directly from below link:
 
-https://github.com/yudiz-ritikapatel/yudiz-core
+https://github.com/yudiz-solutions/yudiz-core
 
 Once the zip file is downloaded, extract its contents within the 'app/code/Yudiz/Core' directory.
 
 Now, To install the Yudiz First Order Extension you can download the Extension from below link:
 
-https://github.com/yudiz-ritikapatel/FirstOrder
+https://github.com/yudiz-solutions/magento-firstorder-discount
 
 After successfully downloading the module, follow these steps to install it:
 
