@@ -1,4 +1,4 @@
-# First Order Discount Magento 2
+# First Order Discount for Magento 2
 
 "First Order Discount Magento 2" is an extension that provides discounts for new customers on their first purchase at your Magento 2 store. This extension enables you to generate personalized discount codes that are automatically applied to the first order made by a customer.
 ## Installation
