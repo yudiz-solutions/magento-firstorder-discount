@@ -52,12 +52,17 @@ class CouponLoad implements \Magento\Framework\Option\ArrayInterface
         $rules->addFieldToFilter('is_active', 1);
         $rules->addFieldToFilter('coupon_type', 2);
         $rules->addFieldToFilter('use_auto_generation', 1)->toOptionArray();
+        
+         // Additional filter for rules starting and ending date
+        $currentDate = date('Y-m-d');
+        $rules->addFieldToFilter('from_date', ['lteq' => $currentDate]);
+        $rules->addFieldToFilter('to_date', ['gteq' => $currentDate]);
 
         // Initialize option array
         $optionArrays = [];
 
         // Iterate through rules to build option array
-        foreach ($rules as $rule) {
+        foreach ($rules->getData() as $rule) {
             $optionArray = [
                 'value' => $rule['rule_id'],
                 'label' => $rule['name']
