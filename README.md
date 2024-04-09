@@ -90,15 +90,28 @@ Login to the **Magento Admin**, navigate to `Yudiz -> First Order Configuration 
 #### General Configuration 
 
 - Extension enable : Select Yes/No to enable or disable the module
-- Shopping Cart price Rule:Choose the shopping Cart price Rule
-- Length: Specify the length of the generated coupon code. It determines how many characters the coupon code will have.
-  Example: "Length: Enter the desired length for the coupon code (e.g., 10)"
+- Shopping Cart price Rule : Choose the shopping Cart price Rule.
+Create cart price rule from Marketing -> Promotions -> Cart Price Rules
+
+<div>
+    <img src="./ReadmeImages/Cart Price Rule.png" alt="Cart Price Rule">
+</div><br/>
+
+- Inside Cart Price Rule:
+
+   - Coupon :  choose ‘Specific Coupon' for the coupon option
+   - Use Auto Generation : Check Use Auto Generation
+
+
+
+- Length : Specify the length of the generated coupon code. It determines how many characters the coupon code will have.
+  Example : "Length: Enter the desired length for the coupon code (e.g., 10)"
 - Format: Choose the format of the coupon code, whether it's alphanumeric, alphabetical, or numeric.
-  Example: "Format: Select the format for the coupon code (e.g., Alphanumeric, Alphabetical, Numeric)"
-- Prefix: Define a prefix to be included at the beginning of each generated coupon code.
-  Example: "Prefix: Enter the prefix to be added before the coupon code (e.g., FIRSTORDER)"
-- Suffix: Define a suffix to be included at the end of each generated coupon code.
-  Example: "Suffix: Enter the suffix to be added after the coupon code (e.g., OFF)"
+  Exampl e: "Format: Select the format for the coupon code (e.g., Alphanumeric, Alphabetical, Numeric)"
+- Prefix : Define a prefix to be included at the beginning of each generated coupon code.
+  Example : "Prefix: Enter the prefix to be added before the coupon code (e.g., FIRSTORDER)"
+- Suffix : Define a suffix to be included at the end of each generated coupon code.
+  Example : "Suffix: Enter the suffix to be added after the coupon code (e.g., OFF)"
 
 #### Email Configuration 
 
