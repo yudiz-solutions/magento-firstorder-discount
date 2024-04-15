@@ -48,6 +48,7 @@ class CouponLoad implements \Magento\Framework\Option\ArrayInterface
         $rules = $objrules->getCollection();
         $rules->addFieldToFilter('is_active', 1);
         $rules->addFieldToFilter('coupon_type', 2);
+        $rules->addFieldToFilter('use_auto_generation', 1);
 
         // Additional filter for rules starting and ending date
         $currentDate = date('Y-m-d');
