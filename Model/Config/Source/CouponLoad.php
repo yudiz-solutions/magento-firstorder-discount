@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Yudiz
  *
@@ -42,21 +43,28 @@ class CouponLoad implements \Magento\Framework\Option\ArrayInterface
      */
     public function toOptionArray()
     {
-        // Retrieve sales rule model object
         $objrules = $this->_salesRuleCoupon->create();
 
-        // Retrieve sales rules collection
         $rules = $objrules->getCollection();
-
-        // Filter active rules with coupon type 2 and auto generation enabled
         $rules->addFieldToFilter('is_active', 1);
         $rules->addFieldToFilter('coupon_type', 2);
-        $rules->addFieldToFilter('use_auto_generation', 1)->toOptionArray();
-        
-         // Additional filter for rules starting and ending date
+
+        // Additional filter for rules starting and ending date
         $currentDate = date('Y-m-d');
-        $rules->addFieldToFilter('from_date', ['lteq' => $currentDate]);
-        $rules->addFieldToFilter('to_date', ['gteq' => $currentDate]);
+        $rules->addFieldToFilter(
+            'from_date',
+            [
+                ['lteq' => $currentDate],
+                ['null' => true]
+            ]
+        );
+        $rules->addFieldToFilter(
+            'to_date',
+            [
+                ['gteq' => $currentDate],
+                ['null' => true]
+            ]
+        );
 
         // Initialize option array
         $optionArrays = [];
