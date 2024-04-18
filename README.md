@@ -140,5 +140,21 @@ After a customer registers, a pop-up will appear, presenting them with their fir
 
 As you can see in the screenshot above, customers will receive the coupon codes after successful registration. Also, they will receive an email containing the discount code for their first order.
 
+Upon adding items to the cart, the generated coupon code is automatically applied, and you receive a confirmation message indicating that the coupon code has been applied. Additionally, you can view the applied coupon code on the cart page.
+
+Please note that this coupon code can only be used once. Once it has been redeemed, it cannot be used again. You can refer to the screenshots below for further clarification.
+
+
+<div>
+    <img src="./ReadmeImages/CouponcodeMessage.png" alt="CouponcodeMessage">
+</div><br/>
+<div>
+    <img src="./ReadmeImages/Cartpage.png" alt="Cartpage">
+</div>
+
+
+
+
+
 
 
