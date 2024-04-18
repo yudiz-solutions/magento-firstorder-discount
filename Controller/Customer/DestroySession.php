@@ -56,6 +56,9 @@ class DestroySession extends Action
      */
     public function execute()
     {
+        $coupondata = $this->session->getData('generated_coupon');
+        $this->session->setData('generated_coupon_data', $coupondata);
+
         // Set the specific session variable to null to destroy it
         $this->session->setData('generated_coupon', null);
 

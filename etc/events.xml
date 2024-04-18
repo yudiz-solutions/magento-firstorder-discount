@@ -17,4 +17,16 @@
     <event name="customer_register_success">
         <observer instance="Yudiz\FirstOrder\Observer\Customer\RegisterSuccess" name="customer_register_succes"/>
     </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="auto_apply_coupon_add_after" instance="Yudiz\FirstOrder\Observer\AutoApplyCoupon" />
+    </event>
+    <event name="checkout_cart_update_items_after">
+        <observer name="auto_apply_coupon_update_items_after" instance="Yudiz\FirstOrder\Observer\AutoApplyCoupon" />
+    </event>
+    <event name="sales_quote_remove_item">
+        <observer name="auto_apply_coupon_remove_item" instance="Yudiz\FirstOrder\Observer\AutoApplyCoupon" />
+    </event>
+    <event name="sales_order_place_after">
+        <observer name="clear_coupon_data_session" instance="Yudiz\FirstOrder\Observer\ClearCouponDataSession" />
+    </event>
 </config>    
